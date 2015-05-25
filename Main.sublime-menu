@@ -7,23 +7,23 @@
 		"mnemonic": "P",
 		"id": "package-settings",
 		"children": [ {
-			"caption": "IntelliDocs",
+			"caption": "CppDoc",
 			"children":[
 				{
 					"command": "open_file",
-					"args": {"file": "${packages}/IntelliDocs/IntelliDocs.sublime-settings"},
+					"args": {"file": "${packages}/CppDoc/CppDoc.sublime-settings"},
 					"caption": "Settings – Default"
 				},
 				{
 					"command": "open_file",
-					"args": {"file": "${packages}/User/IntelliDocs.sublime-settings"},
+					"args": {"file": "${packages}/User/CppDoc.sublime-settings"},
 					"caption": "Settings – User"
 				},
 				{ "caption": "-" },
 				{
 	                "command": "open_file",
 	                "args": {
-	                    "file": "${packages}/IntelliDocs/Default (OSX).sublime-keymap",
+	                    "file": "${packages}/CppDoc/Default (OSX).sublime-keymap",
 	                    "platform": "OSX"
 	                },
 	                "caption": "Key Bindings – Default"
@@ -31,7 +31,7 @@
 	            {
 	                "command": "open_file",
 	                "args": {
-	                    "file": "${packages}/IntelliDocs/Default (Linux).sublime-keymap",
+	                    "file": "${packages}/CppDoc/Default (Linux).sublime-keymap",
 	                    "platform": "Linux"
 	                },
 	                "caption": "Key Bindings – Default"
@@ -39,7 +39,7 @@
 	            {
 	                "command": "open_file",
 	                "args": {
-	                    "file": "${packages}/IntelliDocs/Default (Windows).sublime-keymap",
+	                    "file": "${packages}/CppDoc/Default (Windows).sublime-keymap",
 	                    "platform": "Windows"
 	                },
 	                "caption": "Key Bindings – Default"
