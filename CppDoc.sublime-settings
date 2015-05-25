@@ -1,0 +1,8 @@
+{
+	"help_links": {
+		".*": "http://devdocs.io/%(path)s"
+	},
+	"docs": {
+		"source.c++"	: "C++"
+	}
+}
