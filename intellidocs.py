@@ -1,8 +1,7 @@
-
 import sublime_plugin, sublime, json
 import re, threading, time, os, webbrowser
 
-class IntelliDocsCommand(sublime_plugin.TextCommand):
+class CppDocCommand(sublime_plugin.TextCommand):
 	
 	last_function_name = None
 	last_found = False
@@ -10,14 +9,14 @@ class IntelliDocsCommand(sublime_plugin.TextCommand):
 	menu_links = {}
 	def __init__(self, view):
 		self.view = view
-		self.settings = sublime.load_settings("IntelliDocs.sublime-settings")
+		self.settings = sublime.load_settings("CppDoc.sublime-settings")
 
 	def run(self, edit):
 		# Find db for lang
 		lang = self.getLang()
 		if lang not in self.cache: #DEBUG disable cache: or 1 == 1
 			path_db = os.path.dirname(os.path.abspath(__file__))+"/db/%s.json" % lang
-			self.debug("Loaded intelliDocs db:", path_db)
+			self.debug("Loaded CppDoc db:", path_db)
 			if os.path.exists(path_db):
 				self.cache[lang] = json.load(open(path_db))
 			else:
